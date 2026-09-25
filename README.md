@@ -25,12 +25,14 @@ machine learning, nothing to download first.
   266 tiles). Use the atlas to choose scrolls, not patches.
 - **Ready-to-edit `spiral-scroll.json` files for 10 eligible scrolls**, 9 of which have every input
   the official spiral workflow needs. All 10 pass villa's own parser once the outward sense is set.
-- **Why spiral-fit renders are flat: the windings are packed tighter than the sheets.** On the
-  public spiral fits of PHerc0211, PHerc0826 and PHerc0191, consecutive windings are a median 0.36 to
-  0.67 sheet spacings apart, against 0.86 for curated PHerc0139 windings, so many fitted windings
-  have to cross sheets. Their extra roughness is not the cause: smoothing one leaves its render
-  contrast at 0.03–0.09 (published PHerc0139 mesh, same code: 0.13–0.31). The First Letters recipe
-  turns the fitter's spacing guidance off, although the data it needs are published.
+- **Spiral-fit windings are not one sheet apart, and their renders are flat.** On the public
+  spiral fits of PHerc0211, PHerc0826 and PHerc0191, consecutive windings are a median 0.36 to 0.67
+  sheet spacings apart, against 0.86 for curated PHerc0139 windings, so the fitted windings cannot
+  each follow their own sheet. Renders of 12 blocks of four PHerc0211 windings have a median
+  contrast of 0.09, against 0.29 for a published PHerc0139 mesh rendered by the same code: a bigger
+  gap than between the two scans (0.238 against 0.343), and smoothing the meshes does not close it.
+  The First Letters recipe turns the fitter's spacing guidance off, although the data it needs are
+  published.
 - **A negative result:** our two automatic ways to find `spiral_outward_sense` from the scan were
   not reliable, so the tool never guesses it.
 
@@ -199,12 +201,12 @@ The PHerc0826 file matches the published example field for field, plus two infor
 (`_generated_by`, `_notes`) that the parser ignores. PHerc0343 has tracks and normals but no
 umbilicus, so it is not counted as ready.
 
-## 4. Why spiral-fit renders are flat
+## 4. Spiral-fit windings do not follow the sheets
 
 armando-gaona reported that renders from their PHerc0211 spiral-fit windings have 4.7 times less
 sheet contrast than a published PHerc0139 mesh, and the atlas puts a factor of 1.44 of that in the
 scan itself (0.238 against 0.343). We checked two explanations for the rest: winding pitch, which
-fits, and mesh roughness, which does not.
+shows that the fits do not follow the sheets, and mesh roughness, which does not explain the loss.
 
 **Consecutive windings are packed tighter than the sheets.** In a spiral fit, winding i+1 is one
 full turn outside winding i, so on a scroll whose sheets are s apart the two surfaces should be about
@@ -222,15 +224,24 @@ segments:
 | rodriguescarson spiral fit, PHerc0191 z 11600-12400 | 4 | 82 µm (78–96) | **0.57** (0.54–0.67) | 34–45 % |
 | published PHerc0139 segments w025-w027 (control) | 2 | 131 µm (119–143) | **0.86** (0.78–0.94) | 17–26 % |
 
-The curated windings are 0.8 to 0.9 sheet spacings apart, as consecutive turns should be. The
-spiral fits are not: their median pair is 0.36 to 0.67 sheet spacings apart, so they place 1.5 to
-2.8 windings per real sheet, and the inner windings of PHerc0826 are 23 to 46 µm apart, thinner than
-a papyrus sheet, with 70 to 96 % of a winding's vertices within half a sheet spacing of the next
-one. Windings packed that tightly cannot each stay on their own sheet; many have to cross sheets,
-and a surface that crosses sheets renders flat. rodriguescarson's own README reports the same
-symptom on their PHerc0191 fit (median winding pitch 10.5 voxels against 14 to 19 counted in the
-scan) and leaves it open because peak counting depends on a threshold. The atlas's spacing needs no
-threshold (144 µm, 15.4 voxels, for PHerc0191) and the curated control agrees with it.
+The curated windings are 0.8 to 0.9 sheet spacings apart, as consecutive turns should be. The spiral
+fits are not: their median pair is 0.36 to 0.67 sheet spacings apart, so they place 1.5 to 2.8
+windings per real sheet, and the inner windings of PHerc0826 are 23 to 46 µm apart, thinner than a
+papyrus sheet, with 70 to 96 % of a winding's vertices within half a sheet spacing of the next one.
+Windings packed that tightly cannot each stay on their own sheet; many have to cross sheets, and a
+surface that crosses sheets renders flat. armando-gaona set sheet crossing aside because the fit's
+tangent follows the sheets (alignment 0.99, against 0.996 for the published mesh), but alignment can
+hide it: a surface tilted 3° more than the sheets (8° against 5°) drifts about 20 voxels, more than
+one sheet spacing, across a 400-voxel block. rodriguescarson's own README reports the same symptom
+on their PHerc0191 fit (median winding pitch 10.5 voxels against 14 to 19 counted in the scan) and
+leaves it open because peak counting depends on a threshold. The atlas's spacing needs no threshold
+(144 µm, 15.4 voxels, for PHerc0191) and the curated control agrees with it.
+
+The gap does not predict which PHerc0211 winding renders best, though (render contrast as
+published, three blocks each, from the table further down): w030 and w050, whose pairs are 0.51
+sheet spacings apart, render at 0.09–0.18, w070 (0.67) at 0.03–0.09, and w090, whose pair is 1.92
+apart, at 0.06–0.08. A pitch far from 1 in either direction says that a fit is not locked to the
+sheets; it does not say how much a given winding's render suffers.
 
 The First Letters recipe fits on tracks and normals with the fitter's spacing guidance turned off
 (`"loss_weight_dense_spacing": 0`), and armando-gaona's notebook fits on tracks alone with it off.
@@ -265,23 +276,38 @@ patches (ratios of medians). Their grid steps vary from about 15 to 65 voxels, w
 second difference a rougher measure, so read this as "about 2 to 4 times". `tools/render_contrast.py`
 renders 28 layers along the normal for a 400 × 400-voxel block of a mesh, straight from the bucket,
 and measures the contrast of each 128 × 128 tile's mean layer profile, the same kind of measure
-armando-gaona used. We rendered three blocks of the PHerc0211 winding w070 and three blocks of the
-published PHerc0139 segment w035, each as published and after Gaussian smoothing of the vertex grid
-(σ = 1.5 and 3 grid cells):
+armando-gaona used. We rendered three blocks of each of the four PHerc0211 spiral-fit windings
+(w030, w050, w070, w090) and three blocks of the published PHerc0139 segment w035, each as published
+and after Gaussian smoothing of the vertex grid (σ = 1.5 and 3 grid cells):
 
 | Mesh, block (grid rows, cols) | As published: roughness u / v → contrast | σ = 1.5 cells | σ = 3 cells |
 |---|---|---|---|
+| PHerc0211 w030 (spiral fit), 15:36, 17:38 | 6.8 / 5.9 → **0.127** | 0.4 / 0.6 → **0.146** | 0.3 / 0.3 → **0.105** |
+| PHerc0211 w030 (spiral fit), 25:46, 53:74 | 7.8 / 3.9 → **0.148** | 12.2 / 0.7 → **0.131** | 9.4 / 0.3 → **0.117** |
+| PHerc0211 w030 (spiral fit), 35:56, 89:110 | 9.3 / 4.9 → **0.182** | 0.8 / 0.7 → **0.220** | 0.7 / 0.3 → **0.199** |
+| PHerc0211 w050 (spiral fit), 15:36, 31:52 | 6.2 / 5.3 → **0.127** | 0.5 / 0.5 → **0.149** | 0.4 / 0.2 → **0.145** |
+| PHerc0211 w050 (spiral fit), 25:46, 94:115 | 4.3 / 5.7 → **0.088** | 4.2 / 0.9 → **0.085** | 4.5 / 0.5 → **0.060** |
+| PHerc0211 w050 (spiral fit), 35:56, 157:178 | 9.8 / 5.2 → **0.153** | 0.7 / 1.7 → **0.152** | 0.5 / 0.8 → **0.154** |
 | PHerc0211 w070 (spiral fit), 15:36, 60:81 | 13.3 / 5.2 → **0.072** | 1.5 / 1.0 → **0.086** | 0.3 / 0.5 → **0.068** |
 | PHerc0211 w070 (spiral fit), 25:46, 160:181 | 4.2 / 6.0 → **0.030** | 2.1 / 1.5 → **0.029** | 1.4 / 0.8 → **0.027** |
 | PHerc0211 w070 (spiral fit), 35:56, 260:281 | 5.0 / 5.5 → **0.094** | 2.7 / 1.1 → **0.082** | 1.8 / 0.7 → **0.062** |
+| PHerc0211 w090 (spiral fit), 15:36, 58:79 | 2.5 / 3.7 → **0.061** | 0.5 / 0.3 → **0.049** | 0.3 / 0.1 → **0.044** |
+| PHerc0211 w090 (spiral fit), 25:46, 176:197 | 1.4 / 3.1 → **0.077** | 0.3 / 1.3 → **0.074** | 0.1 / 1.0 → **0.045** |
+| PHerc0211 w090 (spiral fit), 35:56, 294:315 | 6.5 / 5.7 → **0.064** | 0.9 / 2.6 → **0.074** | 0.4 / 1.6 → **0.056** |
 | PHerc0139 w035 (published), 60:81, 60:81 | 1.6 / 1.5 → **0.294** | 0.6 / 0.5 → **0.285** | 0.4 / 0.2 → **0.242** |
 | PHerc0139 w035 (published), 135:156, 130:151 | 1.5 / 1.9 → **0.309** | 0.7 / 0.8 → **0.282** | 0.4 / 0.5 → **0.232** |
 | PHerc0139 w035 (published), 200:221, 180:201 | 1.4 / 2.0 → **0.127** | 0.4 / 1.1 → **0.136** | 0.2 / 0.6 → **0.132** |
 
-Smoothing brings w070 close to the roughness of the published meshes (σ = 1.5) or below it (σ = 3),
-and its render contrast stays at 0.03–0.09; the published mesh stays at 0.13–0.31. So roughness does
-not explain these flat renders, while the pitch audit does: the w070/w071 pair is 0.67 sheet
-spacings apart. This is one winding and three blocks per mesh.
+Smoothing brings the median fitted block to about the roughness of the published mesh (u / v 0.88 /
+0.97 voxels at σ = 1.5 and 0.43 / 0.47 at σ = 3, against 1.52 / 1.91 for the published mesh as
+published), and render contrast does not follow: the median over the 12 blocks goes from 0.091 as
+published to 0.085 and 0.065, while the published mesh stays at 0.13–0.31. So roughness is not what
+flattens these renders. The scan explains part of the gap: the published mesh keeps 37 to 90 % of
+PHerc0139's sheet modulation (0.343), and the same shares of PHerc0211's 0.238 give 0.088 to 0.214.
+Half of the fitted blocks as published (6 of 12) render at or below 0.088, and the median fitted
+block keeps 38 % of its scan's modulation (0.091 of 0.238) against 86 % for the published mesh
+(0.294 of 0.343). This is four windings of one fit and three blocks per winding: a pointer for
+whoever fits spirals next, not a verdict on the method.
 
 ## 5. What did not work: finding the spiral's outward sense automatically
 
