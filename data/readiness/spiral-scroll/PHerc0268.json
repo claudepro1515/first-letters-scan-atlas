@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "name": "PHerc0268",
+  "voxel_size_um": 8.64,
+  "spiral_outward_sense": "CW|ACW",
+  "normal_zarr_group": "2",
+  "lasagna_scale": 4,
+  "paths": {
+    "tracks_dbm": "tracks/PHerc0268_20251110183117_surface_m7_L0_th0.2.dbm"
+  },
+  "_generated_by": "first-letters-scan-atlas tools/readiness.py",
+  "_notes": {
+    "normal_zarr_group": "group used by the Lasagna job for nx/ny; its .zattrs scale is 4.0",
+    "umbilicus": "community manual umbilicus: https://github.com/AlexeyDrobkovStrikesBack/herculaneum-umbilici",
+    "spiral_outward_sense": "not published for this scroll: choose CW or ACW after checking in VC3D"
+  }
+}
