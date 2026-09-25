@@ -25,10 +25,12 @@ machine learning, nothing to download first.
   266 tiles). Use the atlas to choose scrolls, not patches.
 - **Ready-to-edit `spiral-scroll.json` files for 10 eligible scrolls**, 9 of which have every input
   the official spiral workflow needs. All 10 pass villa's own parser once the outward sense is set.
-- **Spiral-fit meshes: rough, but that is not why they render flat.** Published spiral-fit windings of PHerc0211 are
-  about 2 to 4 times rougher than published segments and auto-grown patches. Smoothing one of them
-  until it is as smooth as a published mesh leaves its render contrast where it was (0.03–0.09,
-  against 0.13–0.31 for a published PHerc0139 mesh rendered by the same code).
+- **Why spiral-fit renders are flat: the windings are packed tighter than the sheets.** On the
+  public spiral fits of PHerc0211, PHerc0826 and PHerc0191, consecutive windings are a median 0.36 to
+  0.67 sheet spacings apart, against 0.86 for curated PHerc0139 windings, so many fitted windings
+  have to cross sheets. Their extra roughness is not the cause: smoothing one leaves its render
+  contrast at 0.03–0.09 (published PHerc0139 mesh, same code: 0.13–0.31). The First Letters recipe
+  turns the fitter's spacing guidance off, although the data it needs are published.
 - **A negative result:** our two automatic ways to find `spiral_outward_sense` from the scan were
   not reliable, so the tool never guesses it.
 
@@ -197,14 +199,48 @@ The PHerc0826 file matches the published example field for field, plus two infor
 (`_generated_by`, `_notes`) that the parser ignores. PHerc0343 has tracks and normals but no
 umbilicus, so it is not counted as ready.
 
-## 4. Spiral-fit meshes: rough, but roughness is not what flattens their renders
+## 4. Why spiral-fit renders are flat
 
 armando-gaona reported that renders from their PHerc0211 spiral-fit windings have 4.7 times less
 sheet contrast than a published PHerc0139 mesh, and the atlas puts a factor of 1.44 of that in the
-scan itself (0.238 against 0.343). We checked whether mesh roughness explains the rest.
+scan itself (0.238 against 0.343). We checked two explanations for the rest: winding pitch, which
+fits, and mesh roughness, which does not.
 
-**Roughness.** `tools/mesh_roughness.py` measures how bumpy a tifxyz mesh is: the RMS second
-difference of the vertex grid along the surface normal, rescaled to the nominal 20-voxel grid step.
+**Consecutive windings are packed tighter than the sheets.** In a spiral fit, winding i+1 is one
+full turn outside winding i, so on a scroll whose sheets are s apart the two surfaces should be about
+s apart. `tools/winding_pitch.py` measures that gap (from each vertex of one winding to the next
+winding) and divides it by the sheet spacing the atlas measured for the same scroll. We ran it on
+the public spiral fits we could download and, as a control, on three consecutive curated PHerc0139
+segments:
+
+| Meshes | Pairs | Gap between consecutive windings (median pair, range) | Gap / sheet spacing (median, range) | Vertices within half a sheet of the next winding |
+|---|---:|---|---|---|
+| armando-gaona spiral fit, PHerc0211 z 8000-9000 | 11 | 94 µm (41–270) | **0.67** (0.29–1.92) | 12–86 % |
+| rodriguescarson spiral fit, PHerc0826 z 6528-7328 | 4 | 58 µm (26–84) | **0.38** (0.17–0.55) | 44–93 % |
+| rodriguescarson spiral fit, PHerc0826 z 8928-9728 | 4 | 56 µm (23–113) | **0.36** (0.15–0.74) | 26–96 % |
+| rodriguescarson spiral fit, PHerc0826 z 9328-10128 | 4 | 80 µm (28–119) | **0.53** (0.19–0.78) | 29–91 % |
+| rodriguescarson spiral fit, PHerc0191 z 11600-12400 | 4 | 82 µm (78–96) | **0.57** (0.54–0.67) | 34–45 % |
+| published PHerc0139 segments w025-w027 (control) | 2 | 131 µm (119–143) | **0.86** (0.78–0.94) | 17–26 % |
+
+The curated windings are 0.8 to 0.9 sheet spacings apart, as consecutive turns should be. The
+spiral fits are not: their median pair is 0.36 to 0.67 sheet spacings apart, so they place 1.5 to
+2.8 windings per real sheet, and the inner windings of PHerc0826 are 23 to 46 µm apart, thinner than
+a papyrus sheet, with 70 to 96 % of a winding's vertices within half a sheet spacing of the next
+one. Windings packed that tightly cannot each stay on their own sheet; many have to cross sheets,
+and a surface that crosses sheets renders flat. rodriguescarson's own README reports the same
+symptom on their PHerc0191 fit (median winding pitch 10.5 voxels against 14 to 19 counted in the
+scan) and leaves it open because peak counting depends on a threshold. The atlas's spacing needs no
+threshold (144 µm, 15.4 voxels, for PHerc0191) and the curated control agrees with it.
+
+The First Letters recipe fits on tracks and normals with the fitter's spacing guidance turned off
+(`"loss_weight_dense_spacing": 0`), and armando-gaona's notebook fits on tracks alone with it off.
+The Lasagna `grad_mag` volumes that the spacing loss can use are published for all ten scrolls in
+section 3. Whether turning that guidance on fixes the pitch is the next test. Until then, a null ink
+result from such a fit says little about the scroll.
+
+**Roughness is not the cause.** `tools/mesh_roughness.py` measures how bumpy a tifxyz mesh is: the
+RMS second difference of the vertex grid along the surface normal, rescaled to the nominal 20-voxel
+grid step.
 
 | Mesh | Kind | Grid step, median (5–95 %) | Roughness u / v (voxels) |
 |---|---|---|---|
@@ -226,13 +262,12 @@ difference of the vertex grid along the surface normal, rescaled to the nominal 
 The four fitted windings (the `wNNN` meshes, not the `_spliced` ones) are 4.4 times rougher along
 the grid columns (u) and 2.4 times along the rows (v) than the 10 published segments and auto-grown
 patches (ratios of medians). Their grid steps vary from about 15 to 65 voxels, which makes a
-second difference a rougher measure, so read this as "about 2 to 4 times".
-
-**Does smoothing restore contrast?** `tools/render_contrast.py` renders 28 layers along the normal
-for a 400 × 400-voxel block of a mesh, straight from the bucket, and measures the contrast of each
-128 × 128 tile's mean layer profile, the same kind of measure armando-gaona used. We rendered three
-blocks of the PHerc0211 winding w070 and three blocks of the published PHerc0139 segment w035, each
-as published and after Gaussian smoothing of the vertex grid (σ = 1.5 and 3 grid cells):
+second difference a rougher measure, so read this as "about 2 to 4 times". `tools/render_contrast.py`
+renders 28 layers along the normal for a 400 × 400-voxel block of a mesh, straight from the bucket,
+and measures the contrast of each 128 × 128 tile's mean layer profile, the same kind of measure
+armando-gaona used. We rendered three blocks of the PHerc0211 winding w070 and three blocks of the
+published PHerc0139 segment w035, each as published and after Gaussian smoothing of the vertex grid
+(σ = 1.5 and 3 grid cells):
 
 | Mesh, block (grid rows, cols) | As published: roughness u / v → contrast | σ = 1.5 cells | σ = 3 cells |
 |---|---|---|---|
@@ -244,14 +279,9 @@ as published and after Gaussian smoothing of the vertex grid (σ = 1.5 and 3 gri
 | PHerc0139 w035 (published), 200:221, 180:201 | 1.4 / 2.0 → **0.127** | 0.4 / 1.1 → **0.136** | 0.2 / 0.6 → **0.132** |
 
 Smoothing brings w070 close to the roughness of the published meshes (σ = 1.5) or below it (σ = 3),
-and its render contrast stays at 0.03–0.09; the published mesh stays at 0.13–0.31. So roughness is not what flattens these renders.
-On PHerc0139 the published mesh keeps 37–90 % of the scan's sheet modulation (0.343); the same share
-of PHerc0211's 0.238 would be 0.09–0.21, and the fitted winding sits at or below the bottom of that
-range. What is left is where the fitted surface sits relative to the sheets over millimetres, or
-something neither we nor armando-gaona have tested (they found that the surface is not simply
-off-centre and that the fit's tangent follows the sheets at 0.99, against 0.996 for the published
-mesh). This is one winding
-and three blocks per mesh: a pointer for whoever fits spirals next, not a verdict on the method.
+and its render contrast stays at 0.03–0.09; the published mesh stays at 0.13–0.31. So roughness does
+not explain these flat renders, while the pitch audit does: the w070/w071 pair is 0.67 sheet
+spacings apart. This is one winding and three blocks per mesh.
 
 ## 5. What did not work: finding the spiral's outward sense automatically
 
@@ -329,6 +359,7 @@ python tools/readiness.py --report catalog_report.json --scanq out \
 
 # 5. meshes: roughness of any tifxyz folders, and render contrast of a block (as published and smoothed)
 python tools/mesh_roughness.py <tifxyz_dir> [<tifxyz_dir> ...]
+python tools/winding_pitch.py <fit>/meshes/all --start 20 40 60 80 --sheet-um 153   # sheet spacing from the atlas
 python tools/render_contrast.py <armando-repo>/meshes/w070 \
     https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/PHerc0211/volumes/20250821151803-9.362um-1.2m-113keV-masked.zarr \
     --rows 25:46 --cols 160:181 --smooth 0 1.5 3 --cache cache
@@ -357,8 +388,8 @@ zarr v3 ink labels. Both work on Windows and need neither `zarr` nor `s3fs`.
   and their tests.
 - `data/readiness/`: `readiness.csv/.json` and `spiral-scroll/<scroll>.json`.
 - `data/ink_vs_clarity/ink_vs_clarity.json`: the 266 PHerc0139 tiles.
-- `data/mesh_roughness/mesh_roughness.jsonl` and `data/render_contrast/render_contrast.jsonl`:
-  section 4.
+- `data/winding_pitch/winding_pitch.jsonl`, `data/mesh_roughness/mesh_roughness.jsonl` and
+  `data/render_contrast/render_contrast.jsonl`: section 4.
 - `data/catalog_report.json`: metadata check of every scroll in the bucket.
 - `experiments/outward_sense/`: the failed outward-sense experiment of section 5 and its result.
 
@@ -377,6 +408,8 @@ zarr v3 ink labels. Both work on Windows and need neither `zarr` nor `s3fs`.
 - Spiral-fit windings w030–w090, the 1.4× raw-contrast measurement, the 4.7× render-contrast gap and
   the placement tests quoted in section 4: armando-gaona,
   <https://github.com/armando-gaona/pherc0211-first-letters-free-compute>.
+- Spiral fits of PHerc0826 and PHerc0191 and their own winding-density audit: rodriguescarson,
+  <https://huggingface.co/datasets/rodriguescarson/eligible-scroll-spiral-fits> (CC BY-NC 4.0).
 - Other public First Letters attempts cited: bnleft/first-light-pherc0211; Lutfiya Miller and Chris
   Müller, millerandmuller/first-light-pherc0826 (August 2026 progress prize); ShribyrLabs/vesuvius-reports.
 - Open problems quote: "Open Problems: Why Reading Every Herculaneum Scroll Is Still a Challenge",
