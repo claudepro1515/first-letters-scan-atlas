@@ -1,0 +1,23 @@
+scroll,volume,voxel_um,height_mm,surfaces,lasagna,normal_zarr_group,lasagna_scale,tracks,umbilicus,segments,sheet_modulation,coherence,fog_fraction,spiral_inputs_complete,sense,public_runs
+PHerc0125,20250821151825-9.362um-1.2m-113keV-masked.zarr,9.362,195.1,yes,yes,2,4.0,yes,official,,0.223,0.39,0.16,yes,unknown,"villa PR #1837 recipe: 1,500-slice fit (no ink readout found)"
+PHerc0175A,20250521115057-8.640um-1.2m-116keV-masked.zarr,8.64,110.1,yes,no,,,yes,none,,0.264,0.62,0.12,no,unknown,
+PHerc0175B,20250521125822-8.640um-1.2m-116keV-masked.zarr,8.64,137.4,yes,no,,,yes,none,,0.222,0.55,0.22,no,unknown,
+PHerc0191,20250821151635-9.362um-1.2m-113keV-masked.zarr,9.362,177.7,yes,yes,2,4.0,yes,community (manual),,0.232,0.53,0.18,yes,unknown,
+PHerc0211,20250821151803-9.362um-1.2m-113keV-masked.zarr,9.362,181.8,yes,yes,2,4.0,yes,official,,0.238,0.55,0.16,yes,unknown,armando-gaona/pherc0211-first-letters-free-compute (null); bnleft/first-light-pherc0211 (null)
+PHerc0257,20250821151750-9.362um-1.2m-113keV-masked.zarr,9.362,176.7,yes,yes,2,4.0,yes,community (manual),,0.217,0.41,0.2,yes,unknown,
+PHerc0268,20251110183117-8.640um-1.2m-116keV-masked.zarr,8.64,128.2,yes,yes,2,4.0,yes,community (manual),,0.166,0.37,0.42,yes,unknown,
+PHerc0306B,20250521133212-8.640um-1.2m-116keV-masked.zarr,8.64,137.4,yes,no,,,yes,none,,0.258,0.53,0.11,no,unknown,
+PHerc0343,20250521140437-8.640um-1.2m-116keV-masked.zarr,8.64,155.5,yes,yes,2,4.0,yes,none,,0.246,0.55,0.2,no,unknown,
+PHerc0358,20250821151737-9.362um-1.2m-113keV-masked.zarr,9.362,138.0,yes,yes,2,4.0,yes,community (manual),,0.277,0.65,0.12,yes,unknown,
+PHerc0483A,20250521140913-8.640um-1.2m-116keV-masked.zarr,8.64,137.4,yes,no,,,yes,none,,0.214,0.46,0.21,no,unknown,
+PHerc0483B,20251124083638-8.640um-1.2m-116keV-masked.zarr,8.64,102.6,yes,no,,,yes,none,,0.238,0.5,0.14,no,unknown,
+PHerc0490A,20250521151210-8.640um-1.2m-116keV-masked.zarr,8.64,101.1,yes,no,,,yes,none,,0.222,0.47,0.19,no,unknown,
+PHerc0490B,20250521151215-8.640um-1.2m-116keV-masked.zarr,8.64,92.0,yes,no,,,yes,none,,0.207,0.41,0.23,no,unknown,
+PHerc0800,20250521135224-8.640um-1.2m-116keV-masked.zarr,8.64,209.9,yes,yes,2,4.0,yes,community (manual),,0.235,0.52,0.17,yes,unknown,
+PHerc0813,20250821151723-9.362um-1.2m-113keV-masked.zarr,9.362,159.1,yes,yes,2,4.0,yes,community (manual),,0.276,0.65,0.13,yes,unknown,
+PHerc0826,20250821151701-9.362um-1.2m-113keV-masked.zarr,9.362,158.4,yes,yes,2,4.0,yes,official,,0.316,0.6,0.03,yes,CW,"Miller & Müller (Aug 2026 award, null); ShribyrLabs/vesuvius-reports (null)"
+PHerc0846A,20250728152254-9.362um-1.2m-113keV-masked.zarr,9.362,131.2,yes,no,,,yes,none,,0.233,0.45,0.18,no,unknown,
+PHerc0846B,20250804142305-9.362um-1.2m-113keV-masked.zarr,9.362,130.4,yes,no,,,no,none,,0.222,0.45,0.19,no,unknown,
+PHerc1203,20250820131727-9.362um-1.2m-113keV-masked.zarr,9.362,177.7,yes,yes,2,4.0,no,community (manual),,0.243,0.54,0.17,no,unknown,
+PHerc1218,20250521120456-8.640um-1.2m-116keV-masked.zarr,8.64,200.9,yes,yes,2,4.0,no,community (manual),,0.211,0.47,0.24,no,unknown,
+PHerc1545,20250821151648-9.362um-1.2m-113keV-masked.zarr,9.362,196.2,yes,yes,2,4.0,no,community (manual),,0.26,0.46,0.1,no,unknown,
