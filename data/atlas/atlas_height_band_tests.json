@@ -1,0 +1,188 @@
+{
+ "PHerc0009B": {
+  "best_band": 10,
+  "best_value": 0.279,
+  "overall": 0.256,
+  "p": 0.6677
+ },
+ "PHerc0125": {
+  "best_band": 10,
+  "best_value": 0.267,
+  "overall": 0.223,
+  "p": 0.0845
+ },
+ "PHerc0139": {
+  "best_band": 2,
+  "best_value": 0.399,
+  "overall": 0.343,
+  "p": 0.068
+ },
+ "PHerc0172": {
+  "best_band": 3,
+  "best_value": 0.138,
+  "overall": 0.128,
+  "p": 0.1684
+ },
+ "PHerc0175A": {
+  "best_band": 7,
+  "best_value": 0.315,
+  "overall": 0.264,
+  "p": 0.4158
+ },
+ "PHerc0175B": {
+  "best_band": 10,
+  "best_value": 0.271,
+  "overall": 0.222,
+  "p": 0.5247
+ },
+ "PHerc0191": {
+  "best_band": 2,
+  "best_value": 0.284,
+  "overall": 0.232,
+  "p": 0.075
+ },
+ "PHerc0211": {
+  "best_band": 8,
+  "best_value": 0.265,
+  "overall": 0.238,
+  "p": 0.7531
+ },
+ "PHerc0257": {
+  "best_band": 2,
+  "best_value": 0.284,
+  "overall": 0.217,
+  "p": 0.019
+ },
+ "PHerc0268": {
+  "best_band": 8,
+  "best_value": 0.208,
+  "overall": 0.166,
+  "p": 0.1919
+ },
+ "PHerc0306B": {
+  "best_band": 7,
+  "best_value": 0.283,
+  "overall": 0.258,
+  "p": 0.8231
+ },
+ "PHerc0343": {
+  "best_band": 7,
+  "best_value": 0.333,
+  "overall": 0.246,
+  "p": 0.084
+ },
+ "PHerc0343P": {
+  "best_band": 10,
+  "best_value": 0.349,
+  "overall": 0.277,
+  "p": 0.1134
+ },
+ "PHerc0358": {
+  "best_band": 7,
+  "best_value": 0.339,
+  "overall": 0.277,
+  "p": 0.2089
+ },
+ "PHerc0483A": {
+  "best_band": 0,
+  "best_value": 0.247,
+  "overall": 0.214,
+  "p": 0.6437
+ },
+ "PHerc0483B": {
+  "best_band": 10,
+  "best_value": 0.289,
+  "overall": 0.238,
+  "p": 0.1934
+ },
+ "PHerc0490A": {
+  "best_band": 5,
+  "best_value": 0.253,
+  "overall": 0.222,
+  "p": 0.4518
+ },
+ "PHerc0490B": {
+  "best_band": 1,
+  "best_value": 0.314,
+  "overall": 0.207,
+  "p": 0.0025
+ },
+ "PHerc0500P2": {
+  "best_band": 4,
+  "best_value": 0.403,
+  "overall": 0.376,
+  "p": 0.3488
+ },
+ "PHerc0800": {
+  "best_band": 1,
+  "best_value": 0.278,
+  "overall": 0.235,
+  "p": 0.4413
+ },
+ "PHerc0813": {
+  "best_band": 7,
+  "best_value": 0.329,
+  "overall": 0.276,
+  "p": 0.2614
+ },
+ "PHerc0814": {
+  "best_band": 1,
+  "best_value": 0.336,
+  "overall": 0.3,
+  "p": 0.4273
+ },
+ "PHerc0826": {
+  "best_band": 6,
+  "best_value": 0.37,
+  "overall": 0.316,
+  "p": 0.2874
+ },
+ "PHerc0841": {
+  "best_band": 5,
+  "best_value": 0.325,
+  "overall": 0.302,
+  "p": 0.9025
+ },
+ "PHerc0846A": {
+  "best_band": 2,
+  "best_value": 0.318,
+  "overall": 0.233,
+  "p": 0.021
+ },
+ "PHerc0846B": {
+  "best_band": 8,
+  "best_value": 0.256,
+  "overall": 0.222,
+  "p": 0.6682
+ },
+ "PHerc1203": {
+  "best_band": 8,
+  "best_value": 0.328,
+  "overall": 0.243,
+  "p": 0.057
+ },
+ "PHerc1218": {
+  "best_band": 2,
+  "best_value": 0.3,
+  "overall": 0.211,
+  "p": 0.013
+ },
+ "PHerc1447": {
+  "best_band": 0,
+  "best_value": 0.297,
+  "overall": 0.252,
+  "p": 0.4043
+ },
+ "PHerc1451": {
+  "best_band": 10,
+  "best_value": 0.388,
+  "overall": 0.332,
+  "p": 0.0235
+ },
+ "PHerc1545": {
+  "best_band": 1,
+  "best_value": 0.304,
+  "overall": 0.26,
+  "p": 0.3538
+ }
+}

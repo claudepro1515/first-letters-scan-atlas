@@ -1,0 +1,312 @@
+[
+ {
+  "scroll": "PHerc0009B",
+  "group": "ink found",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2561,
+  "normalized_amplitude": 0.1543,
+  "periodicity": 0.1909,
+  "air_level": 25.0,
+  "papyrus_level": 188.15
+ },
+ {
+  "scroll": "PHerc0125",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2226,
+  "normalized_amplitude": 0.1334,
+  "periodicity": 0.1841,
+  "air_level": 26.0,
+  "papyrus_level": 200.0
+ },
+ {
+  "scroll": "PHerc0139",
+  "group": "ink found",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.3429,
+  "normalized_amplitude": 0.1597,
+  "periodicity": 0.1949,
+  "air_level": 19.0,
+  "papyrus_level": 205.0
+ },
+ {
+  "scroll": "PHerc0172",
+  "group": "ink found",
+  "protocol": "7.91 µm, 53 keV",
+  "modulation": 0.1276,
+  "normalized_amplitude": 0.1832,
+  "periodicity": 0.2236,
+  "air_level": 105.0,
+  "papyrus_level": 209.0
+ },
+ {
+  "scroll": "PHerc0175A",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2639,
+  "normalized_amplitude": 0.1718,
+  "periodicity": 0.2001,
+  "air_level": 27.0,
+  "papyrus_level": 177.0
+ },
+ {
+  "scroll": "PHerc0175B",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2221,
+  "normalized_amplitude": 0.1548,
+  "periodicity": 0.1969,
+  "air_level": 29.0,
+  "papyrus_level": 178.0
+ },
+ {
+  "scroll": "PHerc0191",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.232,
+  "normalized_amplitude": 0.1504,
+  "periodicity": 0.1758,
+  "air_level": 23.0,
+  "papyrus_level": 185.0
+ },
+ {
+  "scroll": "PHerc0211",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2379,
+  "normalized_amplitude": 0.1511,
+  "periodicity": 0.1762,
+  "air_level": 22.0,
+  "papyrus_level": 193.0
+ },
+ {
+  "scroll": "PHerc0257",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2168,
+  "normalized_amplitude": 0.1537,
+  "periodicity": 0.1835,
+  "air_level": 28.0,
+  "papyrus_level": 180.0
+ },
+ {
+  "scroll": "PHerc0268",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.1662,
+  "normalized_amplitude": 0.1301,
+  "periodicity": 0.1917,
+  "air_level": 38.9,
+  "papyrus_level": 189.0
+ },
+ {
+  "scroll": "PHerc0306B",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2579,
+  "normalized_amplitude": 0.1526,
+  "periodicity": 0.1841,
+  "air_level": 22.0,
+  "papyrus_level": 195.0
+ },
+ {
+  "scroll": "PHerc0343",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2456,
+  "normalized_amplitude": 0.168,
+  "periodicity": 0.1973,
+  "air_level": 28.0,
+  "papyrus_level": 179.0
+ },
+ {
+  "scroll": "PHerc0343P",
+  "group": "ink found",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2765,
+  "normalized_amplitude": 0.1716,
+  "periodicity": 0.1742,
+  "air_level": 20.0,
+  "papyrus_level": 175.0
+ },
+ {
+  "scroll": "PHerc0358",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2768,
+  "normalized_amplitude": 0.1587,
+  "periodicity": 0.1841,
+  "air_level": 14.0,
+  "papyrus_level": 193.0
+ },
+ {
+  "scroll": "PHerc0483A",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2139,
+  "normalized_amplitude": 0.1542,
+  "periodicity": 0.1933,
+  "air_level": 29.95,
+  "papyrus_level": 174.0
+ },
+ {
+  "scroll": "PHerc0483B",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.238,
+  "normalized_amplitude": 0.1634,
+  "periodicity": 0.1992,
+  "air_level": 28.0,
+  "papyrus_level": 176.0
+ },
+ {
+  "scroll": "PHerc0490A",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2218,
+  "normalized_amplitude": 0.1634,
+  "periodicity": 0.1877,
+  "air_level": 33.0,
+  "papyrus_level": 177.0
+ },
+ {
+  "scroll": "PHerc0490B",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2071,
+  "normalized_amplitude": 0.1439,
+  "periodicity": 0.1795,
+  "air_level": 24.0,
+  "papyrus_level": 185.0
+ },
+ {
+  "scroll": "PHerc0500P2",
+  "group": "ink found",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.3757,
+  "normalized_amplitude": 0.1816,
+  "periodicity": 0.1859,
+  "air_level": 13.0,
+  "papyrus_level": 183.0
+ },
+ {
+  "scroll": "PHerc0800",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2346,
+  "normalized_amplitude": 0.1563,
+  "periodicity": 0.1999,
+  "air_level": 30.0,
+  "papyrus_level": 179.0
+ },
+ {
+  "scroll": "PHerc0813",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2756,
+  "normalized_amplitude": 0.1711,
+  "periodicity": 0.1887,
+  "air_level": 22.0,
+  "papyrus_level": 182.0
+ },
+ {
+  "scroll": "PHerc0814",
+  "group": "ink found",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2997,
+  "normalized_amplitude": 0.1621,
+  "periodicity": 0.1765,
+  "air_level": 16.0,
+  "papyrus_level": 207.0
+ },
+ {
+  "scroll": "PHerc0826",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.3155,
+  "normalized_amplitude": 0.162,
+  "periodicity": 0.1865,
+  "air_level": 19.0,
+  "papyrus_level": 197.0
+ },
+ {
+  "scroll": "PHerc0841",
+  "group": "ink found",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.3025,
+  "normalized_amplitude": 0.1673,
+  "periodicity": 0.1824,
+  "air_level": 16.0,
+  "papyrus_level": 185.0
+ },
+ {
+  "scroll": "PHerc0846A",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2332,
+  "normalized_amplitude": 0.1501,
+  "periodicity": 0.1803,
+  "air_level": 21.0,
+  "papyrus_level": 191.0
+ },
+ {
+  "scroll": "PHerc0846B",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2223,
+  "normalized_amplitude": 0.1461,
+  "periodicity": 0.1815,
+  "air_level": 20.0,
+  "papyrus_level": 190.0
+ },
+ {
+  "scroll": "PHerc1203",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2431,
+  "normalized_amplitude": 0.1582,
+  "periodicity": 0.1814,
+  "air_level": 26.0,
+  "papyrus_level": 185.0
+ },
+ {
+  "scroll": "PHerc1218",
+  "group": "eligible",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2112,
+  "normalized_amplitude": 0.1475,
+  "periodicity": 0.1815,
+  "air_level": 27.0,
+  "papyrus_level": 183.0
+ },
+ {
+  "scroll": "PHerc1447",
+  "group": "ink found",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.2523,
+  "normalized_amplitude": 0.1625,
+  "periodicity": 0.194,
+  "air_level": 26.0,
+  "papyrus_level": 180.0
+ },
+ {
+  "scroll": "PHerc1451",
+  "group": "other",
+  "protocol": "8.64 µm, 1.2 m, 116 keV",
+  "modulation": 0.3321,
+  "normalized_amplitude": 0.1641,
+  "periodicity": 0.1921,
+  "air_level": 21.0,
+  "papyrus_level": 206.0
+ },
+ {
+  "scroll": "PHerc1545",
+  "group": "eligible",
+  "protocol": "9.36 µm, 1.2 m, 113 keV",
+  "modulation": 0.2601,
+  "normalized_amplitude": 0.1637,
+  "periodicity": 0.178,
+  "air_level": 20.0,
+  "papyrus_level": 188.0
+ }
+]

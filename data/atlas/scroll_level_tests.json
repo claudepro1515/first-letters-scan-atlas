@@ -1,0 +1,98 @@
+[
+ {
+  "subset": "all scans",
+  "measure": "modulation",
+  "n_ink": 8,
+  "n_eligible": 22,
+  "auc": 0.784,
+  "p": 0.018
+ },
+ {
+  "subset": "all scans",
+  "measure": "normalized_amplitude",
+  "n_ink": 8,
+  "n_eligible": 22,
+  "auc": 0.807,
+  "p": 0.0099
+ },
+ {
+  "subset": "all scans",
+  "measure": "periodicity",
+  "n_ink": 8,
+  "n_eligible": 22,
+  "auc": 0.528,
+  "p": 0.8362
+ },
+ {
+  "subset": "9.36 µm protocol",
+  "measure": "modulation",
+  "n_ink": 4,
+  "n_eligible": 11,
+  "auc": 0.955,
+  "p": 0.0059
+ },
+ {
+  "subset": "9.36 µm protocol",
+  "measure": "normalized_amplitude",
+  "n_ink": 4,
+  "n_eligible": 11,
+  "auc": 0.864,
+  "p": 0.0396
+ },
+ {
+  "subset": "9.36 µm protocol",
+  "measure": "periodicity",
+  "n_ink": 4,
+  "n_eligible": 11,
+  "auc": 0.636,
+  "p": 0.4894
+ },
+ {
+  "subset": "8.64 µm protocol",
+  "measure": "modulation",
+  "n_ink": 3,
+  "n_eligible": 11,
+  "auc": 0.879,
+  "p": 0.0604
+ },
+ {
+  "subset": "8.64 µm protocol",
+  "measure": "normalized_amplitude",
+  "n_ink": 3,
+  "n_eligible": 11,
+  "auc": 0.667,
+  "p": 0.456
+ },
+ {
+  "subset": "8.64 µm protocol",
+  "measure": "periodicity",
+  "n_ink": 3,
+  "n_eligible": 11,
+  "auc": 0.303,
+  "p": 0.3681
+ },
+ {
+  "subset": "9.36 µm protocol, without the detached fragment PHerc0500P2",
+  "measure": "modulation",
+  "n_ink": 3,
+  "n_eligible": 11,
+  "auc": 0.939,
+  "p": 0.022
+ },
+ {
+  "subset": "9.36 µm protocol, without the detached fragment PHerc0500P2",
+  "measure": "normalized_amplitude",
+  "n_ink": 3,
+  "n_eligible": 11,
+  "auc": 0.818,
+  "p": 0.1264
+ },
+ {
+  "subset": "9.36 µm protocol, without the detached fragment PHerc0500P2",
+  "measure": "periodicity",
+  "n_ink": 3,
+  "n_eligible": 11,
+  "auc": 0.576,
+  "p": 0.7692
+ }
+]

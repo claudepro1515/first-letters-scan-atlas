@@ -1,0 +1,684 @@
+[
+ {
+  "scroll": "PHerc0500P2",
+  "group": "ink found",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250820143440-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 133,
+  "profiles": 4291,
+  "modulation": 0.376,
+  "modulation_ci95": [
+   0.368,
+   0.385
+  ],
+  "coherence": 0.65,
+  "spacing_um": 142.0,
+  "fog_fraction": 0.008,
+  "periodicity": 0.186,
+  "periodicity_ci95": [
+   0.18,
+   0.194
+  ],
+  "incoherent_fraction": 0.193
+ },
+ {
+  "scroll": "PHerc0139",
+  "group": "ink found",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250728140407-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 173,
+  "profiles": 6255,
+  "modulation": 0.343,
+  "modulation_ci95": [
+   0.331,
+   0.356
+  ],
+  "coherence": 0.73,
+  "spacing_um": 153.0,
+  "fog_fraction": 0.025,
+  "periodicity": 0.195,
+  "periodicity_ci95": [
+   0.188,
+   0.203
+  ],
+  "incoherent_fraction": 0.096
+ },
+ {
+  "scroll": "PHerc1451",
+  "group": "other",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521151225-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 164,
+  "profiles": 6157,
+  "modulation": 0.332,
+  "modulation_ci95": [
+   0.322,
+   0.341
+  ],
+  "coherence": 0.71,
+  "spacing_um": 143.0,
+  "fog_fraction": 0.018,
+  "periodicity": 0.192,
+  "periodicity_ci95": [
+   0.186,
+   0.198
+  ],
+  "incoherent_fraction": 0.061
+ },
+ {
+  "scroll": "PHerc0826",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151701-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 168,
+  "profiles": 5271,
+  "modulation": 0.316,
+  "modulation_ci95": [
+   0.302,
+   0.329
+  ],
+  "coherence": 0.6,
+  "spacing_um": 153.0,
+  "fog_fraction": 0.026,
+  "periodicity": 0.187,
+  "periodicity_ci95": [
+   0.181,
+   0.194
+  ],
+  "incoherent_fraction": 0.216
+ },
+ {
+  "scroll": "PHerc0841",
+  "group": "ink found",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151531-9.366um-1.2m-113keV-masked.zarr",
+  "chunks": 171,
+  "profiles": 5629,
+  "modulation": 0.302,
+  "modulation_ci95": [
+   0.292,
+   0.315
+  ],
+  "coherence": 0.57,
+  "spacing_um": 151.0,
+  "fog_fraction": 0.045,
+  "periodicity": 0.182,
+  "periodicity_ci95": [
+   0.177,
+   0.188
+  ],
+  "incoherent_fraction": 0.177
+ },
+ {
+  "scroll": "PHerc0814",
+  "group": "ink found",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250804134230-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 180,
+  "profiles": 6229,
+  "modulation": 0.3,
+  "modulation_ci95": [
+   0.287,
+   0.31
+  ],
+  "coherence": 0.59,
+  "spacing_um": 132.0,
+  "fog_fraction": 0.041,
+  "periodicity": 0.177,
+  "periodicity_ci95": [
+   0.172,
+   0.181
+  ],
+  "incoherent_fraction": 0.135
+ },
+ {
+  "scroll": "PHerc0343P",
+  "group": "ink found",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521134555-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 119,
+  "profiles": 3786,
+  "modulation": 0.277,
+  "modulation_ci95": [
+   0.263,
+   0.29
+  ],
+  "coherence": 0.6,
+  "spacing_um": 140.0,
+  "fog_fraction": 0.065,
+  "periodicity": 0.174,
+  "periodicity_ci95": [
+   0.167,
+   0.182
+  ],
+  "incoherent_fraction": 0.205
+ },
+ {
+  "scroll": "PHerc0358",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151737-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 170,
+  "profiles": 5676,
+  "modulation": 0.277,
+  "modulation_ci95": [
+   0.26,
+   0.295
+  ],
+  "coherence": 0.65,
+  "spacing_um": 138.0,
+  "fog_fraction": 0.118,
+  "periodicity": 0.184,
+  "periodicity_ci95": [
+   0.178,
+   0.19
+  ],
+  "incoherent_fraction": 0.165
+ },
+ {
+  "scroll": "PHerc0813",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151723-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 164,
+  "profiles": 5690,
+  "modulation": 0.276,
+  "modulation_ci95": [
+   0.258,
+   0.294
+  ],
+  "coherence": 0.65,
+  "spacing_um": 150.0,
+  "fog_fraction": 0.129,
+  "periodicity": 0.189,
+  "periodicity_ci95": [
+   0.184,
+   0.195
+  ],
+  "incoherent_fraction": 0.133
+ },
+ {
+  "scroll": "PHerc0175A",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521115057-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 155,
+  "profiles": 5292,
+  "modulation": 0.264,
+  "modulation_ci95": [
+   0.249,
+   0.278
+  ],
+  "coherence": 0.62,
+  "spacing_um": 155.0,
+  "fog_fraction": 0.115,
+  "periodicity": 0.2,
+  "periodicity_ci95": [
+   0.192,
+   0.208
+  ],
+  "incoherent_fraction": 0.146
+ },
+ {
+  "scroll": "PHerc1545",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151648-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 165,
+  "profiles": 4612,
+  "modulation": 0.26,
+  "modulation_ci95": [
+   0.247,
+   0.272
+  ],
+  "coherence": 0.46,
+  "spacing_um": 140.0,
+  "fog_fraction": 0.1,
+  "periodicity": 0.178,
+  "periodicity_ci95": [
+   0.172,
+   0.184
+  ],
+  "incoherent_fraction": 0.301
+ },
+ {
+  "scroll": "PHerc0306B",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521133212-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 165,
+  "profiles": 5293,
+  "modulation": 0.258,
+  "modulation_ci95": [
+   0.246,
+   0.271
+  ],
+  "coherence": 0.53,
+  "spacing_um": 148.0,
+  "fog_fraction": 0.109,
+  "periodicity": 0.184,
+  "periodicity_ci95": [
+   0.179,
+   0.191
+  ],
+  "incoherent_fraction": 0.198
+ },
+ {
+  "scroll": "PHerc0009B",
+  "group": "ink found",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521125136-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 140,
+  "profiles": 3873,
+  "modulation": 0.256,
+  "modulation_ci95": [
+   0.245,
+   0.266
+  ],
+  "coherence": 0.45,
+  "spacing_um": 156.0,
+  "fog_fraction": 0.072,
+  "periodicity": 0.191,
+  "periodicity_ci95": [
+   0.183,
+   0.199
+  ],
+  "incoherent_fraction": 0.308
+ },
+ {
+  "scroll": "PHerc1447",
+  "group": "ink found",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521151220-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 170,
+  "profiles": 5145,
+  "modulation": 0.252,
+  "modulation_ci95": [
+   0.237,
+   0.267
+  ],
+  "coherence": 0.52,
+  "spacing_um": 155.0,
+  "fog_fraction": 0.133,
+  "periodicity": 0.194,
+  "periodicity_ci95": [
+   0.188,
+   0.2
+  ],
+  "incoherent_fraction": 0.243
+ },
+ {
+  "scroll": "PHerc0343",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521140437-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 165,
+  "profiles": 5104,
+  "modulation": 0.246,
+  "modulation_ci95": [
+   0.226,
+   0.263
+  ],
+  "coherence": 0.55,
+  "spacing_um": 159.0,
+  "fog_fraction": 0.202,
+  "periodicity": 0.197,
+  "periodicity_ci95": [
+   0.189,
+   0.205
+  ],
+  "incoherent_fraction": 0.227
+ },
+ {
+  "scroll": "PHerc1203",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250820131727-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 169,
+  "profiles": 5429,
+  "modulation": 0.243,
+  "modulation_ci95": [
+   0.227,
+   0.261
+  ],
+  "coherence": 0.54,
+  "spacing_um": 163.0,
+  "fog_fraction": 0.174,
+  "periodicity": 0.181,
+  "periodicity_ci95": [
+   0.176,
+   0.188
+  ],
+  "incoherent_fraction": 0.197
+ },
+ {
+  "scroll": "PHerc0211",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151803-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 166,
+  "profiles": 5267,
+  "modulation": 0.238,
+  "modulation_ci95": [
+   0.226,
+   0.252
+  ],
+  "coherence": 0.55,
+  "spacing_um": 141.0,
+  "fog_fraction": 0.157,
+  "periodicity": 0.176,
+  "periodicity_ci95": [
+   0.171,
+   0.181
+  ],
+  "incoherent_fraction": 0.207
+ },
+ {
+  "scroll": "PHerc0483B",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20251124083638-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 165,
+  "profiles": 5033,
+  "modulation": 0.238,
+  "modulation_ci95": [
+   0.225,
+   0.252
+  ],
+  "coherence": 0.5,
+  "spacing_um": 149.0,
+  "fog_fraction": 0.136,
+  "periodicity": 0.199,
+  "periodicity_ci95": [
+   0.193,
+   0.206
+  ],
+  "incoherent_fraction": 0.237
+ },
+ {
+  "scroll": "PHerc0800",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521135224-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 172,
+  "profiles": 5168,
+  "modulation": 0.235,
+  "modulation_ci95": [
+   0.221,
+   0.248
+  ],
+  "coherence": 0.52,
+  "spacing_um": 158.0,
+  "fog_fraction": 0.174,
+  "periodicity": 0.2,
+  "periodicity_ci95": [
+   0.193,
+   0.208
+  ],
+  "incoherent_fraction": 0.249
+ },
+ {
+  "scroll": "PHerc0846A",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250728152254-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 172,
+  "profiles": 4768,
+  "modulation": 0.233,
+  "modulation_ci95": [
+   0.216,
+   0.248
+  ],
+  "coherence": 0.45,
+  "spacing_um": 146.0,
+  "fog_fraction": 0.177,
+  "periodicity": 0.18,
+  "periodicity_ci95": [
+   0.177,
+   0.185
+  ],
+  "incoherent_fraction": 0.307
+ },
+ {
+  "scroll": "PHerc0191",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151635-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 163,
+  "profiles": 5095,
+  "modulation": 0.232,
+  "modulation_ci95": [
+   0.218,
+   0.247
+  ],
+  "coherence": 0.53,
+  "spacing_um": 144.0,
+  "fog_fraction": 0.184,
+  "periodicity": 0.176,
+  "periodicity_ci95": [
+   0.171,
+   0.18
+  ],
+  "incoherent_fraction": 0.219
+ },
+ {
+  "scroll": "PHerc0125",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151825-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 173,
+  "profiles": 4367,
+  "modulation": 0.223,
+  "modulation_ci95": [
+   0.212,
+   0.232
+  ],
+  "coherence": 0.39,
+  "spacing_um": 151.0,
+  "fog_fraction": 0.157,
+  "periodicity": 0.184,
+  "periodicity_ci95": [
+   0.179,
+   0.19
+  ],
+  "incoherent_fraction": 0.369
+ },
+ {
+  "scroll": "PHerc0175B",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521125822-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 162,
+  "profiles": 5206,
+  "modulation": 0.222,
+  "modulation_ci95": [
+   0.208,
+   0.237
+  ],
+  "coherence": 0.55,
+  "spacing_um": 163.0,
+  "fog_fraction": 0.221,
+  "periodicity": 0.197,
+  "periodicity_ci95": [
+   0.191,
+   0.204
+  ],
+  "incoherent_fraction": 0.197
+ },
+ {
+  "scroll": "PHerc0490A",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521151210-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 150,
+  "profiles": 4350,
+  "modulation": 0.222,
+  "modulation_ci95": [
+   0.211,
+   0.234
+  ],
+  "coherence": 0.47,
+  "spacing_um": 156.0,
+  "fog_fraction": 0.191,
+  "periodicity": 0.188,
+  "periodicity_ci95": [
+   0.182,
+   0.194
+  ],
+  "incoherent_fraction": 0.275
+ },
+ {
+  "scroll": "PHerc0846B",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250804142305-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 155,
+  "profiles": 4319,
+  "modulation": 0.222,
+  "modulation_ci95": [
+   0.211,
+   0.236
+  ],
+  "coherence": 0.45,
+  "spacing_um": 145.0,
+  "fog_fraction": 0.188,
+  "periodicity": 0.181,
+  "periodicity_ci95": [
+   0.176,
+   0.186
+  ],
+  "incoherent_fraction": 0.303
+ },
+ {
+  "scroll": "PHerc0257",
+  "group": "eligible",
+  "protocol": "9.36 \u00b5m, 1.2 m, 113 keV",
+  "volume": "20250821151750-9.362um-1.2m-113keV-masked.zarr",
+  "chunks": 163,
+  "profiles": 4379,
+  "modulation": 0.217,
+  "modulation_ci95": [
+   0.207,
+   0.229
+  ],
+  "coherence": 0.41,
+  "spacing_um": 145.0,
+  "fog_fraction": 0.199,
+  "periodicity": 0.183,
+  "periodicity_ci95": [
+   0.179,
+   0.189
+  ],
+  "incoherent_fraction": 0.328
+ },
+ {
+  "scroll": "PHerc0483A",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521140913-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 163,
+  "profiles": 4592,
+  "modulation": 0.214,
+  "modulation_ci95": [
+   0.201,
+   0.227
+  ],
+  "coherence": 0.46,
+  "spacing_um": 150.0,
+  "fog_fraction": 0.209,
+  "periodicity": 0.193,
+  "periodicity_ci95": [
+   0.188,
+   0.199
+  ],
+  "incoherent_fraction": 0.296
+ },
+ {
+  "scroll": "PHerc1218",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521120456-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 170,
+  "profiles": 4963,
+  "modulation": 0.211,
+  "modulation_ci95": [
+   0.195,
+   0.228
+  ],
+  "coherence": 0.47,
+  "spacing_um": 146.0,
+  "fog_fraction": 0.244,
+  "periodicity": 0.182,
+  "periodicity_ci95": [
+   0.176,
+   0.188
+  ],
+  "incoherent_fraction": 0.27
+ },
+ {
+  "scroll": "PHerc0490B",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20250521151215-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 161,
+  "profiles": 4223,
+  "modulation": 0.207,
+  "modulation_ci95": [
+   0.196,
+   0.22
+  ],
+  "coherence": 0.41,
+  "spacing_um": 145.0,
+  "fog_fraction": 0.226,
+  "periodicity": 0.18,
+  "periodicity_ci95": [
+   0.175,
+   0.186
+  ],
+  "incoherent_fraction": 0.344
+ },
+ {
+  "scroll": "PHerc0268",
+  "group": "eligible",
+  "protocol": "8.64 \u00b5m, 1.2 m, 116 keV",
+  "volume": "20251110183117-8.640um-1.2m-116keV-masked.zarr",
+  "chunks": 162,
+  "profiles": 4000,
+  "modulation": 0.166,
+  "modulation_ci95": [
+   0.155,
+   0.179
+  ],
+  "coherence": 0.37,
+  "spacing_um": 173.0,
+  "fog_fraction": 0.419,
+  "periodicity": 0.192,
+  "periodicity_ci95": [
+   0.186,
+   0.197
+  ],
+  "incoherent_fraction": 0.383
+ },
+ {
+  "scroll": "PHerc0172",
+  "group": "ink found",
+  "protocol": "7.91 \u00b5m, 53 keV",
+  "volume": "20241024131838-7.910um-53keV-masked.zarr",
+  "chunks": 175,
+  "profiles": 5520,
+  "modulation": 0.128,
+  "modulation_ci95": [
+   0.125,
+   0.131
+  ],
+  "coherence": 0.57,
+  "spacing_um": 148.0,
+  "fog_fraction": 0.736,
+  "periodicity": 0.224,
+  "periodicity_ci95": [
+   0.217,
+   0.23
+  ],
+  "incoherent_fraction": 0.211
+ }
+]
